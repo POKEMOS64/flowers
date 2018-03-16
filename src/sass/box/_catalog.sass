@@ -1,13 +1,47 @@
 .catalog
 	background-image: url(../img/bg_catalog.jpg)
-	
 	background-repeat: repeat
 	background-size: auto
 	.middle
 		max-width: 1366px
 		margin: 0 auto
-		
+	
 	&__container
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		&_tabs
+			display: flex
+			flex-direction: row
+			align-content: space-between
+			justify-content: space-between
+			align-items: baseline
+			width: 100%
+			li
+				background: $color-green
+				color: #ffffff
+				padding: .5rem 1rem
+				flex: 2 1 auto
+				background: $color-green
+				cursor: pointer
+				&.active
+					display: block
+					background: #FF0066
+				&:hover
+					opacity: .9
+					color: #000
+				&:last-child
+					text-align: right
+					
+		&_tab
+			display: none
+			&.active
+				display: block
+			p
+				display: block
+				margin: 1rem 0
+	&__box_element
 		display: flex
 		flex-direction: row
 		flex-wrap: wrap

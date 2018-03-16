@@ -1,1 +1,29 @@
 footer
+	background: #000
+	padding: 2rem 0
+	.middle
+		display: flex
+		flex-direction: row
+		justify-content: center
+		@media(max-width: 960px)
+			flex-direction: column
+			padding: .5rem
+	.footer
+		&__logo_img
+			width: auto
+			margin: 0
+		&__box_info
+			color: #ffffff
+			text-align: center
+			margin: 0 2rem
+		&__contact
+			button
+				border: 0
+				background: transparent
+				background: $color-green
+				color: #ffffff
+				padding: .5rem 1rem
+				margin-top: 1rem
+	a
+		color: #ffffff
+	

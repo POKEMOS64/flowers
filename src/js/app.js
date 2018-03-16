@@ -5,7 +5,16 @@ $('.navigation').on('click','a', function(event){
 			top = $(id).offset().top;
 	$('body,html').animate({scrollTop: top},1500);
 });
-
+(function($) {
+$(function() {
+$('ul.catalog__container_tabs').on('click', 'li:not(.active)', function(){
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.catalog__container').find('div.catalog__container_tab').removeClass('active').eq($(this).index()).addClass('active');
+    });
+ 
+});
+})(jQuery);
 $('#navi_open').click(function(){
     $('.header__menu, #navi_close').fadeIn(400); 
     $('#navi_open').fadeOut(400); 
