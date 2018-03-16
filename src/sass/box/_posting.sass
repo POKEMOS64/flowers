@@ -1,0 +1,42 @@
+.posting
+	background: #ccc
+	background-image: url(../img/addd.png)
+	background-size: auto
+	
+	&__info
+		display: flex
+		flex-direction: row
+		@media(max-width: 760px)
+			flex-wrap: wrap
+		&_text
+			padding: 2rem
+			box-sizing: border-box
+			text-align: center
+			font:
+				size: 1.5rem
+				family: $OS
+			display: flex
+			justify-content: center
+			align-content: center
+		&_box
+			width: 50%
+			@media(max-width: 760px)
+				width: 100%
+			&>span
+				font:
+					size: 1.33rem
+				width: 80%
+				border-bottom: 2px solid #000
+				display: block
+				padding-bottom: .5rem
+		&_gallery
+			margin-top: 1rem
+			img
+				margin: 0
+			button
+				width: 100%
+				background: transparent
+				background: $color-w
+				color: #ffffff
+				padding: .3rem 0
+				border: 0

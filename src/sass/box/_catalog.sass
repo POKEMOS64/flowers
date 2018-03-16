@@ -1,0 +1,42 @@
+.catalog
+	background-image: url(../img/bg_catalog.jpg)
+	
+	background-repeat: repeat
+	background-size: auto
+	.middle
+		max-width: 1366px
+		margin: 0 auto
+		
+	&__container
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+	&__element
+		margin: 1rem
+		border-bottom: 4px solid $color-green
+		max-width: 10rem
+		padding: .3rem
+		background: #fff
+		img
+			width: 100%
+			margin: 0 auto
+		&_atr
+			padding: .3rem .2rem
+			font:
+				size: .8rem
+				family: $OS
+		&_price
+			font:
+				family: $OS
+			text-align: center
+			padding-bottom: .5rem
+			span
+				color: $color-green
+				margin-right: .3rem
+		&:hover
+			background: $color-green
+			color: #fff 
+			cursor: pointer
+			span
+				color: #fff
